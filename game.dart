@@ -8,7 +8,7 @@ void main() {
   int guessNo = Random().nextInt(20);
   while (true) {
     if (inputnumber == guessNo) {
-      print('you win the game');
+      print('you won the game');
       break;
     } else if (inputnumber > guessNo) {
       print('enter the smaller number');
@@ -17,5 +17,6 @@ void main() {
       print('Enter the larger number ');
       inputnumber = int.parse(stdin.readLineSync()!);
     }
+    print("game over");
   }
 }
